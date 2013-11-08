@@ -1,0 +1,12 @@
+version: 1.0
+apiversion: 2
+description: A Titanium label replacement made to be used with the TitaniumAnimator module
+author: Seth Benjamin
+license: GPLv3
+copyright: Copyright (c) 2013 by Seth Benjamin
+
+name: TitaniumCoreLabel
+moduleid: com.animecyc.corelabel
+guid: 47468583-70BF-4B8B-8640-D4C47C493FDF
+platform: iphone
+minsdk: 3.1.3.GA
