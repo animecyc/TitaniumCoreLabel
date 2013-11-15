@@ -37,13 +37,9 @@
 
 - (id)createLabel:(id)args
 {
-    ENSURE_SINGLE_ARG(args, NSDictionary);
+    id<TiEvaluator> context = [self executionContext];
 
-    CoreLabelProxy* label = [[CoreLabelProxy alloc] init];
-
-    [label _initWithProperties:args];
-
-    return [label autorelease];
+    return [[[CoreLabelProxy alloc] _initWithPageContext:context args:args] autorelease];
 }
 
 @end
